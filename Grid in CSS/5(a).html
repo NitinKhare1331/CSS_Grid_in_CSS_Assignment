@@ -1,0 +1,36 @@
+<!-- Justify items justifies all items in a grid container where as justify self only justifies the specefic item in a container.
+There are so many attributes for justify-self such as strech, start, end , center ,etc. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid in CSS</title>
+    <style>
+        .container{
+            width: 500px;
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            gap: 20px;
+            margin: 20px;
+            background-color: yellow;
+            justify-items: right;
+        }
+        .container .c1{
+            width: 100px;
+            height: 100px;
+            color: white;
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <h1>Here all the items are justified right.</h1>
+    <div class="container">
+        <span class="c1 a">A</span>
+        <span class="c1 b">B</span>
+        <span class="c1 c">C</span>
+        <span class="c1 d">D</span>
+    </div>
+</body>
+</html>
